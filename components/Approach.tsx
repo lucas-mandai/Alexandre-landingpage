@@ -2,6 +2,8 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
+import MagicButton from "./MagicButton";
+import { FaArrowPointer, FaHandPointer, FaLocationArrow, FaRegHandPointUp } from "react-icons/fa6";
 
 const Approach = () => {
   return (
@@ -54,7 +56,7 @@ const Approach = () => {
             colors={[[125, 211, 252]]}
           />
         </Card>
-         <Card
+        <Card
           title="Retenção e Fidelização"
           icon={<AceternityIcon order="Etapa 4" />}
           des="Você precisa vender hoje, amanhã e sempre. Por isso, buscamos criar estratégias de retenção e relacionamento à longo prazo entre você e seus consumidores, aumento sua taxa de LTV."
@@ -119,6 +121,7 @@ const Card = ({
       </AnimatePresence>
 
       <div className="relative z-20 px-10">
+
         <div
           // add this for making it center
           // absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]
@@ -126,6 +129,7 @@ const Card = ({
         group-hover/canvas-card:opacity-0 transition duration-200 min-w-40 mx-auto flex items-center justify-center"
         >
           {icon}
+
         </div>
         <h2
           // change text-3xl, add text-center
@@ -166,6 +170,8 @@ const AceternityIcon = ({ order }: { order: string }) => {
         justify-center rounded-full bg-slate-950 px-5 py-2 text-purple backdrop-blur-3xl font-bold text-2xl"
         >
           {order}
+
+          <FaArrowPointer size={20} />
         </span>
       </button>
     </div>

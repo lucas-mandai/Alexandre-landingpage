@@ -5,7 +5,7 @@ import MagicButton from "./MagicButton";
 
 const Footer = () => {
   return (
-    <footer className="w-full md:pt-20 pb-10" id="contact">
+    <footer className="w-full md:pt-14 pb-10" id="contact">
       {/* background grid 
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
         <img
@@ -33,10 +33,10 @@ const Footer = () => {
       <hr className="mt-5" />
       <div className="flex flex-col md:flex-row justify-between items-center text-center flex-wrap gap-4 py-10">
         <div className="flex-1">
-          <h1 className="font-bold text-purple">Sobre mim</h1> 
+          <h1 className="font-bold text-purple">Sobre mim</h1>
           <p>No mercado há mais de 6 anos ajudando pessoas a baterem recorde de faturamento.</p>
         </div>
-        
+
         <div className="flex-1">
           <h1 className="font-bold text-purple">Contato</h1>
           <p>contato@alexandretrentin.com.br</p>
@@ -54,9 +54,9 @@ const Footer = () => {
             </a>
             <a href="https://www.facebook.com/profile.php?id=61563936280667">
               <FaFacebook size={24} />
-           </a>
+            </a>
           </div>
-          
+
         </div>
       </div>
       <div className="text-center text-xs">

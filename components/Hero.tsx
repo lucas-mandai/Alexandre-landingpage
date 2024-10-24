@@ -66,14 +66,14 @@ const Hero = () => {
           />
           <div className=" flex md:hidden items-center text-right gap-4">
             <div className="flex-1">
-              <Image src={imageHero} alt="Alexandre imagem" height={330}></Image>
+              <Image src={imageHero} alt="Alexandre imagem" height={330} ></Image>
             </div>
             <p className="md:tracking-wider mb-4 text-base md:text-lg lg:text-2xl flex-1">
               Olá! sou Alexandre Trentin, entenda um pouco mais sobre como minha experiência no mundo digital pode alavancar o seu negócio.
             </p>
           </div>
 
-          <p className="hidden md:flex md:tracking-wider mb-4 text-base md:text-lg lg:text-2xl flex-1">
+          <p className="hidden md:flex md:tracking-wider mb-4 text-base md:text-lg lg:text-2xl flex-1 md:max-w-3xl">
             Olá! sou Alexandre Trentin, entenda um pouco mais sobre como minha experiência no mundo digital pode alavancar o seu negócio.
           </p>
 
