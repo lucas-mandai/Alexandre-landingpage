@@ -9,21 +9,21 @@ import imgTrofeu from "/public/trofeu.png"
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-28">
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
        */}
       <div>
         <Spotlight
-          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
+          className="-top-40 md:-left-32 md:-top-20 h-screen"
           fill="white"
         />
         <Spotlight
-          className="h-[80vh] w-[50vw] top-10 left-full"
+          className="h-[80vh] w-[50vw] top-10 "
           fill="purple"
         />
-        <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
+        <Spotlight className="md:left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
       </div>
 
       {/**
@@ -49,11 +49,11 @@ const Hero = () => {
             <p className="uppercase tracking-widest text-blue-100">
               Seu sucesso é a minha maior recompensa
             </p>
-             <Image src={imgTrofeu} alt="trofeu" height={30}></Image>
+            <Image src={imgTrofeu} alt="trofeu" height={30}></Image>
           </div>
-         
-          
-          
+
+
+
 
           {/**
            *  Link: https://ui.aceternity.com/components/text-generate-effect
@@ -62,24 +62,35 @@ const Hero = () => {
            */}
           <TextGenerateEffect
             words="Potencialize seu negócio com tráfego qualificado"
-            className="text-[40px] md:text-5xl lg:text-5xl"
+            className="text-[30px] md:text-5xl lg:text-5xl"
           />
+          <div className=" flex md:hidden items-center text-right gap-4">
+            <div className="flex-1">
+              <Image src={imageHero} alt="Alexandre imagem" height={330}></Image>
+            </div>
+            <p className="md:tracking-wider mb-4 text-base md:text-lg lg:text-2xl flex-1">
+              Olá! sou Alexandre Trentin, entenda um pouco mais sobre como minha experiência no mundo digital pode alavancar o seu negócio.
+            </p>
+          </div>
 
-          <p className="md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Olá! sou Brasmova, com anos de experiência e resultados comprovados
+          <p className="hidden md:flex md:tracking-wider mb-4 text-base md:text-lg lg:text-2xl flex-1">
+            Olá! sou Alexandre Trentin, entenda um pouco mais sobre como minha experiência no mundo digital pode alavancar o seu negócio.
           </p>
 
-          <a href="#about">
-            <MagicButton
-              title="Projetos"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="pt-6">
+            <a href="#about">
+              <MagicButton
+                title="Saiba mais"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+          </div>
+
         </div>
 
-        <div className="">
-           {/* <Image src={imageHero} alt="Alexandre imagem" height={420}></Image> */}
+        <div className="hidden md:flex">
+          <Image src={imageHero} alt="Alexandre imagem" height={420}></Image>
         </div>
       </div>
     </div>

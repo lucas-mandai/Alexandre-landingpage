@@ -1,11 +1,11 @@
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaLocationArrow } from "react-icons/fa6";
 
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-20 pb-10" id="contact">
+    <footer className="w-full md:pt-20 pb-10" id="contact">
       {/* background grid 
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
         <img
@@ -22,9 +22,9 @@ const Footer = () => {
         <p className="text-white-200 md:mt-10 my-5 text-center">
           Entre em contato comigo agora mesmo e vamos conversar sobre como posso te ajudar alcançar seus objetivos
         </p>
-        <a href="mailto:contact@jsmastery.pro">
+        <a href="https://wa.me/5514997638316">
           <MagicButton
-            title="Let's get in touch"
+            title="Entre em contato"
             icon={<FaLocationArrow />}
             position="right"
           />
@@ -33,22 +33,34 @@ const Footer = () => {
       <hr className="mt-5" />
       <div className="flex flex-col md:flex-row justify-between items-center text-center flex-wrap gap-4 py-10">
         <div className="flex-1">
-          <h1 className="font-bold text-purple">Sobre nós</h1> 
-          <p>Estamos no mercado há mais de 5 anos e temos a satisfação do cliente como nossa principal prioridade.</p>
+          <h1 className="font-bold text-purple">Sobre mim</h1> 
+          <p>No mercado há mais de 6 anos ajudando pessoas a baterem recorde de faturamento.</p>
         </div>
-        <div className="flex-1 ">
-          <h1 className="font-bold text-purple">Endereço</h1>
-          <p>Avenida Arquiteto Luis Saia, 610</p>
-          <p>Vila Irmãos Andrade - Lins - SP</p>
-          <p>CEP: 16400-748</p>
-        </div>
+        
         <div className="flex-1">
           <h1 className="font-bold text-purple">Contato</h1>
-          <p>contato@brasmova.com</p>
+          <p>contato@alexandretrentin.com.br</p>
+          <p>(14) 99763-8316</p>
+        </div>
+        <div className="flex-1 ">
+          {/* <h1 className="font-bold text-purple">Endereço</h1>
+          <p>Avenida Arquiteto Luis Saia, 610</p>
+          <p>Vila Irmãos Andrade - Lins - SP</p>
+          <p>CEP: 16400-748</p> */}
+          <h1 className="font-bold text-purple">Siga nas redes</h1>
+          <div className="flex justify-center gap-5 pt-2">
+            <a href="https://www.instagram.com/alexandretrentinn">
+              <FaInstagram size={24} />
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61563936280667">
+              <FaFacebook size={24} />
+           </a>
+          </div>
+          
         </div>
       </div>
-      <div className="text-center">
-        Copyright Brasmova Comércio e Empreendimentos Digitais LTDA - 35973641000107 - 2024. Todos os direitos reservados.
+      <div className="text-center text-xs">
+        Copyright GOLD INVESTIMENTOS E CONSULTORIA LTDA - 57.443.093/0001-46 - 2024. Todos os direitos reservados.
       </div>
 
       {/* <div className="flex mt-16 md:flex-row flex-col justify-between items-center">

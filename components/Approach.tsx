@@ -5,7 +5,7 @@ import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 
 const Approach = () => {
   return (
-    <section id="method" className="w-full py-20">
+    <section id="method" className="w-full md:py-20">
       <h1 className="heading">
         Minha <span className="text-purple">métodologia</span>
       </h1>
@@ -14,7 +14,7 @@ const Approach = () => {
         {/* add des prop */}
         <Card
           title="Geração de Tráfego Qualificado"
-          icon={<AceternityIcon order="Phase 1" />}
+          icon={<AceternityIcon order="Etapa 1" />}
           des="De nada adianta ter um produto ou serviço único, se ninguém sabe que ele existe concorda? O primeiro passo é gerar tráfego e expor ao máximo sua solução para uma audiência segmentada."
         >
           <CanvasRevealEffect
@@ -25,7 +25,7 @@ const Approach = () => {
         </Card>
         <Card
           title="Engajamento e User Experience"
-          icon={<AceternityIcon order="Phase 2" />}
+          icon={<AceternityIcon order="Etapa 2" />}
           des="A 2º Etapa é encantar os consumidores e incentivá-los a realizarem uma ação de compra. Para isso, usamos diversas técnicas de UX, CTAs e Gatilhos Mentais."
         >
           <CanvasRevealEffect
@@ -45,7 +45,7 @@ const Approach = () => {
         </Card>
         <Card
           title="Otimização de Conversão e Vendas"
-          icon={<AceternityIcon order="Phase 3" />}
+          icon={<AceternityIcon order="Etapa 3" />}
           des="Após alcançar um público segmentado e engaja-lo com sua oferta, é hora da venda! Otimizamos suas campanhas e analisamos os resultados obtidos de forma técnica e recorrente."
         >
           <CanvasRevealEffect
@@ -56,7 +56,7 @@ const Approach = () => {
         </Card>
          <Card
           title="Retenção e Fidelização"
-          icon={<AceternityIcon order="Phase 4" />}
+          icon={<AceternityIcon order="Etapa 4" />}
           des="Você precisa vender hoje, amanhã e sempre. Por isso, buscamos criar estratégias de retenção e relacionamento à longo prazo entre você e seus consumidores, aumento sua taxa de LTV."
         >
           <CanvasRevealEffect

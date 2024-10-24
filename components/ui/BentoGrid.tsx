@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
 // Also install this npm i --save-dev @types/react-lottie
@@ -11,6 +11,7 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
+import { FaLocationArrow } from "react-icons/fa6";
 
 export const BentoGrid = ({
   className,
@@ -54,6 +55,11 @@ export const BentoGridItem = ({
   spareImg?: string;
   vid?: string;
 }) => {
+   const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true); // Define quando estiver no cliente
+      }, []);
   const leftLists = ["Resultados", "Segmentação", "Otimização"];
   const rightLists = ["Análise", "Planejamento", "Redução de Custos"];
 
@@ -92,7 +98,7 @@ export const BentoGridItem = ({
       {/* add img divs */}
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
-          {vid && (
+          {isClient &&(
             <video
               src={vid}
               autoPlay
@@ -197,13 +203,20 @@ export const BentoGridItem = ({
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 
-              <MagicButton
+              {/* <MagicButton
                 title={copied ? "Email is Copied!" : "Copy my email address"}
                 icon={<IoCopyOutline />}
                 position="left"
                 handleClick={handleCopy}
                 otherClasses="!bg-[#161A31]"
-              />
+              /> */}
+              <a href="https://wa.me/5514997638316">
+          <MagicButton
+            title="Entre em contato"
+            icon={<FaLocationArrow />}
+            position="right"
+          />
+        </a>
             </div>
           )}
         </div>
